@@ -1,4 +1,5 @@
 <?php 
+/*
 //PDO
 //Verbindung zur Datenbank aufbauen
 //PHP Fehlermeldungen anzeigen
@@ -26,13 +27,21 @@ try {
 catch(PDOException $e) {
     //Bei einer Fehlerhaften Verbindung eine Nachricht ausgeben
     exit("Verbindung fehlgeschlagen! " . $e->getMessage());
-}
+}*/
 
 
 //mysqli
 $mysqli = new mysqli('localhost', 'root' , "", 'ms_user');
 if($mysqli->connect_error){
     die("Fehler bei der Datenbankverbindung: " .mysqli_connect_error());
+}
+$mysqli = new mysqli('localhost', 'root' , "", 'ms_user');
+if($mysqli->connect_error){
+    echo "Fehler bei der Datenbankverbindung: " .mysqli_connect_error();
+    exit();
+}
+if(!$mysqli->set_charset('utf8mb4')) {
+    echo "Fehler beim Zeichensatz" .$mysqli->error;
 }
 echo "Verbindung hergestellt";
 $mysqli->close();
