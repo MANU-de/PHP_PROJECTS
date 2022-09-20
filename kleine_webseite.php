@@ -38,7 +38,7 @@ echo "<img src = '{$bilder[$zufallszahl]['pfad']}'
        echo "<hr>";
        ?>
 
-       <button id = "color">Farbwechsel</button>
+       <!-- <button id = "color">Farbwechsel</button>
        <script>
            document.getElementById('color').onclick = changeColor;
 
@@ -54,9 +54,8 @@ echo "<img src = '{$bilder[$zufallszahl]['pfad']}'
                  return currentColor;
            }
            
-
-           
        </script>
+        -->
 
 </body>
 <footer>

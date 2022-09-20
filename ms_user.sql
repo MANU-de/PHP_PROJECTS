@@ -34,7 +34,7 @@ CREATE TABLE `gerichte` (
   `kategorie_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
+-- 
 -- Daten für Tabelle `gerichte`
 --
 
